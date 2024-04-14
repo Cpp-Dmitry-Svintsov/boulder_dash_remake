@@ -10,3 +10,5 @@ The algoritm of pythfind by anemy is simple and the enemy look at the right side
 The algoritm of sone fallen is simple = We go for array for all stones in DOWN - TOP direction. If the cell undes the current stone is free stne moove down, if we have two free cail in the left and left-bottom and dont have stobe in left-top - moove left, and ....
 The Camera algoritm I use fow SCROPLLING game level, because the game area is bigger than screen.
 The Moover - Moove objects in the game.
+In this game I Use Singleton for two instance: AsFrameDc and Camera. It need to use AsSingletonInstance::Get_Instance() to get instance. And when game is ending all singletons it's need to delete - AsSingletonInstance::Delete_Instance();
+Because of merging screen I use double buffering.
